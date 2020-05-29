@@ -48,10 +48,10 @@ target 'covidsafe' do
   pod 'RNI18n', :path => '../node_modules/react-native-i18n'
   pod 'RNKeychain', :path => '../node_modules/react-native-keychain'
 
-  target 'covidsafeTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  # target 'covidsafeTests' do
+  #   inherit! :search_paths
+  #   # Pods for testing
+  # end
 
   use_native_modules!
 end
@@ -64,4 +64,11 @@ target 'covidsafe-tvOS' do
     # Pods for testing
   end
 
+end
+post_install do |pi|
+    pi.pods_project.targets.each do |t|
+      t.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
+      end
+    end
 end
