@@ -21,6 +21,7 @@ import PropTypes from 'prop-types';
 import {strings} from '../locales/i18n';
 
 class Health extends Component {
+  var
   constructor() {
     super();
     this.state = {
@@ -39,6 +40,8 @@ class Health extends Component {
     const {
       healthData: {symptomsDate, tabIdx, symptomsMarkedDays},
     } = this.props;
+
+    console.log("PRops :"+ JSON.stringify(this.props.route.name))
 
     return (
       <>
@@ -79,13 +82,14 @@ class Health extends Component {
             });
           }}
           weekView={this.state.weekView}>
-          <TabView>
-            <Symptoms
-              tabLabel={strings('symptoms.text')}
-              navigate={this.props.navigation.navigate}
-            />
-            <Report tabLabel={strings('diagnosis.text')} />
-          </TabView>
+          {
+              this.props.route.name != 'Diagnosis' ? 
+              <Symptoms
+                tabLabel={strings('symptoms.text')}
+                navigate={this.props.navigation.navigate}
+              />:
+              <Report tabLabel={strings('diagnosis.text')} />
+            }
         </Calendar>
       </>
     );

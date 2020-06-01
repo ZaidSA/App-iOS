@@ -49,8 +49,9 @@ export default function BottomNav() {
         }}
       />
       <Tab.Screen
-        name="Resources"
-        component={Resources}
+        name="Diagnosis"
+        
+        component={Health}
         options={{
           tabBarLabel: strings("bottom.sheet_menu_item_resources"),
           tabBarIcon: ({color}) => (

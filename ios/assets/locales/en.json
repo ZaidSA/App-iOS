@@ -364,7 +364,7 @@
     "sheet_menu_item_home": "Home",
     "sheet_menu_item_contact_log": "Contact Log",
     "sheet_menu_item_health_report": "Symptoms",
-    "sheet_menu_item_resources": "Resources"
+    "sheet_menu_item_resources": "Diagnosis"
   },
   "self": {
     "quarantine_for_14_days": "Self-quarantine For 14 Days"

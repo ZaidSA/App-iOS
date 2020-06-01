@@ -118,8 +118,8 @@ class Home extends Component {
   };
 
   fetchMessageID = location => {
-    
-    const url = `${GET_MESSAGE_LIST_URL}?lat=${location.latitudePrefix}&lon=${location.longitudePrefix}&precision=${location.precision}&lastTimestamp=0`;
+    var timestamp = Number(new Date());
+    const url = `${GET_MESSAGE_LIST_URL}?lat=${location.latitudePrefix}&lon=${location.longitudePrefix}&precision=${location.precision}&lastTimestamp=${timestamp}`;
 
     return fetch(url, {
       headers: {

@@ -390,9 +390,9 @@
 				ORGANIZATIONNAME = CovidSafe;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = C96T5T6GY6;
+						DevelopmentTeam = CCWQY473B6;
 						LastSwiftMigration = 1130;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -720,11 +720,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = covidsafe/covidsafe.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4.0;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = C96T5T6GY6;
+				DEVELOPMENT_TEAM = CCWQY473B6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = covidsafe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -733,9 +733,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kovid19track.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kovacorp.ios;
 				PRODUCT_NAME = Kovid19Track;
-				PROVISIONING_PROFILE_SPECIFIER = "Kovid19 Dist";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "covidsafe-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -750,10 +750,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = covidsafe/covidsafe.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4.0;
-				DEVELOPMENT_TEAM = C96T5T6GY6;
+				DEVELOPMENT_TEAM = CCWQY473B6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = covidsafe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -762,9 +762,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kovid19track.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kovacorp.ios;
 				PRODUCT_NAME = Kovid19Track;
-				PROVISIONING_PROFILE_SPECIFIER = "Kovid19 Dist";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "covidsafe-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
