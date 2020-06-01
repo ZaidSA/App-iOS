@@ -30,7 +30,7 @@ class PrepareInterviewComponent extends Component {
         <Modal
           visible={this.state.modalOn}
           handleModalClose={this.handleModalClose}
-          title={strings('contact.header_text_demo')}>
+          title={strings('contact.header_text')}>
           {
             {
               0: <InterviewPrepIntro />,
@@ -62,13 +62,13 @@ class PrepareInterviewComponent extends Component {
             }}>
             <Text style={styles.button_text}>{strings('prepare.for_interview_btn_text')}</Text>
           </TouchableOpacity>
-          <TouchableOpacity
+          {/* <TouchableOpacity
             style={[styles.button, styles.learn_more]}
             onPress={() => {
 
             }}>
             <Text style={[styles.button_text, styles.learn_more_text]}>{strings('learn.more_link_text')}</Text>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
       </View>
     );

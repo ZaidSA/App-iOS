@@ -49,7 +49,7 @@ class Health extends Component {
               style={styles.logo}
               source={require('../assets/home/logo.png')}
             />
-            <Text style={styles.title}>{strings('bottom.sheet_menu_item_health_report')}[DEMO]</Text>
+            <Text style={styles.title}>{strings('bottom.sheet_menu_item_health_report')}</Text>
           </View>
           <TouchableOpacity
             style={styles.calendar_button}

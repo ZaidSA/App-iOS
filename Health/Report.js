@@ -17,7 +17,7 @@ class Report extends PureComponent {
         <PrepareInterviewComponent />
         <Emergency />
         <CareTips />
-        <ResourcesComponent />
+        {/* <ResourcesComponent /> */}
       </ScrollView>
     );
   }

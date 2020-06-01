@@ -44,17 +44,17 @@ class SettingsModal extends Component {
 
             <>
               <Text style={styles.section_title}>More</Text>
-              <SettingLink iconName={'share24'} title={'Share'} />
-              <SettingLink
+              <SettingLink iconName={'share24'} title={'Share'} url="http://51.143.46.242:3000/" />
+              {/* <SettingLink
                 iconName={'logo24'}
-                title={'About CovidSafe'}
+                title={'About Kovid19Track'}
                 url={UW_URL}
-              />
-              <SettingLink
+              /> */}
+              {/* <SettingLink
                 iconName={'readingMode24'}
                 title={'FAQ'}
                 url={UW_URL}
-              />
+              /> */}
             </>
           </ScrollView>
         </Modal>

@@ -14,13 +14,13 @@
   },
   "health": {
     "header_text": "Salud",
-    "header_text_demo": "Salud [DEMO]"
+    "header_text_demo": "Salud"
   },
   "contact": {
     "header_text": "Preparaci\u00f3n de entrevistas",
-    "header_text_demo": "Preparaci\u00f3n de entrevistas [DEMO]",
+    "header_text_demo": "Preparaci\u00f3n de entrevistas",
     "log_header_text": "Registro de contacto",
-    "log_header_text_demo": "Registro de contacto [DEMO]",
+    "log_header_text_demo": "Registro de contacto",
     "logs": "Registros de contacto",
     "title_1": "Revise qu\u00e9 s\u00edntomas le gustar\u00eda incluir.",
     "title_2": "Revise su historial de ubicaciones de los \u00faltimos 14 d\u00edas.",
@@ -42,7 +42,7 @@
   },
   "help": {
     "header_text": "Recursos",
-    "header_text_demo": "Recursos [DEMO]",
+    "header_text_demo": "Recursos",
     "your_community_by_reporting": "Ayuda a tu comunidad informando tu diagn\u00f3stico"
   },
   "warning": {
@@ -51,7 +51,7 @@
   },
   "symptom": {
     "help_text": "Use este formulario para proporcionar un informe diario de cualquier s\u00edntoma que tenga. Puede enviar este formulario una vez al d\u00eda.",
-    "logs": "Registros de s\u00edntomas [DEMO]",
+    "logs": "Registros de s\u00edntomas",
     "submission_date_pkey": "s\u00edntomas_submission_date_pkey",
     "tracker_text": "Rastreador de s\u00edntomas"
   },

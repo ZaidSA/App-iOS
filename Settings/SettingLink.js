@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View, Linking, TouchableOpacity} from 'react-native';
+import {Share, StyleSheet, Text, View, Linking, TouchableOpacity} from 'react-native';
 import CustomIcon from '../assets/icons/CustomIcon.js';
 import PropTypes from 'prop-types';
 import colors from '../assets/colors';
@@ -11,9 +11,23 @@ class SettingLink extends Component {
     return (
       <TouchableOpacity
         style={styles.row}
-        onPress={() => {
-          if (url) {
-            Linking.openURL(url)
+        onPress={ async () => {
+          try {
+            const result = await Share.share({
+              message:
+                'Download and learn more about the Kovid19Track app at http://51.143.46.242:3000/',
+            });
+            if (result.action === Share.sharedAction) {
+              if (result.activityType) {
+                // shared with activity type of result.activityType
+              } else {
+                // shared
+              }
+            } else if (result.action === Share.dismissedAction) {
+              // dismissed
+            }
+          } catch (error) {
+            alert(error.message);
           }
         }}>
         {

@@ -1,5 +1,5 @@
 import 'react-native-gesture-handler';
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import BackgroundFetch from 'react-native-background-fetch';
 import LocationServices from '../Home/LocationServices';
 import Notification from './Notification';
@@ -15,17 +15,17 @@ import {
   ScrollView,
   Linking,
 } from 'react-native';
-import {GET_MESSAGE_LIST_URL, FETCH_MESSAGE_INFO_URL} from '../utils/endpoints';
-import {DEFAULT_NOTIFICATION} from '../utils/constants';
-import {GetStoreData, SetStoreData} from '../utils/asyncStorage';
-import {getLatestCoarseLocation} from '../utils/coarseLocation';
+import { GET_MESSAGE_LIST_URL, FETCH_MESSAGE_INFO_URL } from '../utils/endpoints';
+import { DEFAULT_NOTIFICATION } from '../utils/constants';
+import { GetStoreData, SetStoreData } from '../utils/asyncStorage';
+import { getLatestCoarseLocation } from '../utils/coarseLocation';
 import SymptomTracker from '../SymptomTracker/SymptomTracker';
 import SettingsModal from '../Settings/SettingsModal';
 import ResourcesComponent from '../ResourcesComponent/ResourcesComponent';
-import {UW_URL} from '../utils/constants';
+import { UW_URL } from '../utils/constants';
 import Privacy from '../Privacy/Privacy';
 import PushNotification from 'react-native-push-notification';
-import {strings} from '../locales/i18n';
+import { strings } from '../locales/i18n';
 
 class Home extends Component {
   constructor() {
@@ -42,7 +42,7 @@ class Home extends Component {
   componentDidMount() {
     this.processQueries();
     BackgroundFetch.configure(
-      {minimumFetchInterval: 15}, // <-- minutes (15 is minimum allowed)
+      { minimumFetchInterval: 15 }, // <-- minutes (15 is minimum allowed)
       async taskId => {
         console.log('[js] Received background-fetch event: ', taskId);
         this.processQueries();
@@ -99,7 +99,7 @@ class Home extends Component {
         // const messages = await this.fetchMessages(messageIDs);
         let notifications = await this.searchQuery();
         if (notifications && notifications.length > 0) {
-          this.setState({notifications});
+          this.setState({ notifications });
 
           if (this.state.enable_notification) {
             notifications.map(notification => {
@@ -118,6 +118,7 @@ class Home extends Component {
   };
 
   fetchMessageID = location => {
+    
     const url = `${GET_MESSAGE_LIST_URL}?lat=${location.latitudePrefix}&lon=${location.longitudePrefix}&precision=${location.precision}&lastTimestamp=0`;
 
     return fetch(url, {
@@ -130,7 +131,7 @@ class Home extends Component {
         return response.json();
       })
       .then(data => {
-        const {messageInfoes} = data;
+        const { messageInfoes } = data;
         return messageInfoes;
       })
       .catch(err => {
@@ -184,7 +185,7 @@ class Home extends Component {
       refreshing: true,
     });
 
-    this.processQueries().then(() => this.setState({refreshing: false}));
+    this.processQueries().then(() => this.setState({ refreshing: false }));
   };
 
   render() {
@@ -227,11 +228,11 @@ class Home extends Component {
                     {isBroadcasting
                       ? strings('global.logging')
                       : strings('global.stopping')}
-                    <Text
+                    {/* <Text
                       style={styles.lear_more_link}
                       onPress={() => Linking.openURL(UW_URL)}>
                       {strings('learn.more_link_text')}
-                    </Text>
+                    </Text> */}
                   </Text>
                 </View>
               </View>
@@ -254,7 +255,7 @@ class Home extends Component {
             date={new Date()}
           />
 
-          <ResourcesComponent />
+          {/* <ResourcesComponent /> */}
           <Privacy />
         </ScrollView>
       </>

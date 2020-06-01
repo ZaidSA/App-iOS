@@ -60,7 +60,7 @@ class Resources extends Component {
               );
             })}
           </View>
-          <ResourcesComponent />
+          {/* <ResourcesComponent /> */}
         </ScrollView>
         <RBSheet
           ref={ref => {

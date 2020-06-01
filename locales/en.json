@@ -14,13 +14,13 @@
   },
   "health": {
     "header_text": "Health",
-    "header_text_demo": "Health [DEMO]"
+    "header_text_demo": "Health"
   },
   "contact": {
     "header_text": "Interview Preparation",
-    "header_text_demo": "Interview Preparation [DEMO]",
+    "header_text_demo": "Interview Preparation",
     "log_header_text": "Contact Log",
-    "log_header_text_demo": "Contact Log [DEMO]",
+    "log_header_text_demo": "Contact Log",
     "logs": "Contact logs",
     "title_1": "Review which symptoms you would like to include.",
     "title_2": "Review your location history from the last 14 days.",
@@ -42,7 +42,7 @@
   },
   "help": {
     "header_text": "Resources",
-    "header_text_demo": "Resources [DEMO]",
+    "header_text_demo": "Resources",
     "your_community_by_reporting": "Help your community by reporting your diagnosis"
   },
   "warning": {
@@ -53,7 +53,7 @@
     "help_text": "Use this form to provide a daily report of any symptoms you have. You may submit this form once a day.",
     "logs": "Symptom logs",
     "submission_date_pkey": "symptom_submission_date_pkey",
-    "tracker_text": "Symptom Tracker [DEMO]"
+    "tracker_text": "Symptom Tracker"
   },
   "notif": {
     "message": "We are currently logging your location.",
@@ -363,7 +363,7 @@
   "bottom": {
     "sheet_menu_item_home": "Home",
     "sheet_menu_item_contact_log": "Contact Log",
-    "sheet_menu_item_health_report": "Health Report",
+    "sheet_menu_item_health_report": "Symptoms",
     "sheet_menu_item_resources": "Resources"
   },
   "self": {
