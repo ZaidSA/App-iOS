@@ -45,9 +45,9 @@ class Diagnosys extends Component {
                             source={require('../assets/home/logo.png')}
                         />
                         <Text style={styles.title}>{strings('diagnosis.text')}</Text>
-                        <Report tabLabel={strings('diagnosis.text')} />
                     </View>
                 </View>
+                        <Report tabLabel={strings('diagnosis.text')} />
                 
             </>
         );
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     },
 });
 
-Health.propTypes = {
+Diagnosys.propTypes = {
     updateHealthData: PropTypes.func,
 };
 
