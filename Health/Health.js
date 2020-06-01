@@ -8,11 +8,9 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import Symptoms from './Symptoms';
-import Report from './Report';
 import colors from '../assets/colors';
 import CustomIcon from '../assets/icons/CustomIcon.js';
 import Calendar from '../views/Calendar';
-import TabView from '../views/TabView';
 import DateConverter from '../utils/date';
 import {updateHealthData} from './actions.js';
 import {bindActionCreators} from 'redux';
@@ -40,8 +38,6 @@ class Health extends Component {
     const {
       healthData: {symptomsDate, tabIdx, symptomsMarkedDays},
     } = this.props;
-
-    console.log("PRops :"+ JSON.stringify(this.props.route.name))
 
     return (
       <>
@@ -82,14 +78,10 @@ class Health extends Component {
             });
           }}
           weekView={this.state.weekView}>
-          {
-              this.props.route.name != 'Diagnosis' ? 
-              <Symptoms
+          <Symptoms
                 tabLabel={strings('symptoms.text')}
                 navigate={this.props.navigation.navigate}
-              />:
-              <Report tabLabel={strings('diagnosis.text')} />
-            }
+              />
         </Calendar>
       </>
     );

@@ -3,7 +3,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import colors from '../assets/colors.js';
 import Home from '../Home/Home';
 import Health from '../Health/Health';
-import Resources from '../Resources/Resources';
+import Diagnosys from '../Health/Diagnosys'
 import CustomIcon from '../assets/icons/CustomIcon.js';
 import ContactLog from '../ContactLog/ContactLog';
 import { strings } from '../locales/i18n';
@@ -50,8 +50,8 @@ export default function BottomNav() {
       />
       <Tab.Screen
         name="Diagnosis"
-        
-        component={Health}
+
+        component={Diagnosys}
         options={{
           tabBarLabel: strings("bottom.sheet_menu_item_resources"),
           tabBarIcon: ({color}) => (
